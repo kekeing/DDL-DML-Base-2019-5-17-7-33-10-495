@@ -1,0 +1,11 @@
+RENAME TABLE student to my_student;
+ALTER TABLE	my_student add COLUMN hobby VARCHAR(20);
+ALTER TABLE my_student CHANGE id my_id INT;
+ALTER TABLE my_student add number INT;
+ALTER table my_student DROP COLUMN number;
+ALTER TABLE my_student ENGINE=InnoDB;
+drop TABLE my_student;
+INSERT INTO score(score) VALUES (80);
+UPDATE score SET score = 88 where id = 1;
+DELETE FROM score where score = 80;
+SELECT * FROM score where id = 1;
